@@ -1,56 +1,112 @@
-# Welcome to your Expo app 👋
+# Student Task Manager
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Aplikasi pengelola tugas mahasiswa berbasis **React Native** dan **Expo**. Aplikasi ini dibuat untuk membantu mahasiswa mencatat, mengatur, dan memantau tugas agar aktivitas perkuliahan menjadi lebih terorganisir.
 
-## Get started
+## Tentang Aplikasi
 
-1. Install dependencies
+Student Task Manager menyediakan fitur untuk mengelola tugas berdasarkan kategori, prioritas, status pengerjaan, dan deadline. Aplikasi juga dilengkapi dashboard, statistik, penyimpanan lokal, serta notifikasi pengingat.
 
-   ```bash
-   npm install
-   ```
+## Fitur Utama
 
-2. Start the app
+- **Dashboard:** Menampilkan ringkasan dan progres tugas.
+- **Manajemen Tugas:** Menambahkan, mengedit, menghapus, dan mengubah status tugas.
+- **Pencarian:** Mencari tugas berdasarkan judul atau deskripsi.
+- **Filter Tugas:** Memisahkan tugas yang sudah dan belum selesai.
+- **Kategori:** Mengelompokkan tugas Kuliah, Pribadi, dan Pekerjaan.
+- **Prioritas:** Mengatur tingkat prioritas Rendah, Sedang, dan Tinggi.
+- **Deadline:** Menentukan tanggal penyelesaian tugas.
+- **Analytics:** Melihat statistik dan ringkasan tugas.
+- **Penyimpanan Lokal:** Menyimpan data menggunakan AsyncStorage.
+- **Notifikasi:** Memberikan pengingat tugas berdasarkan deadline.
 
-   ```bash
-   npx expo start
-   ```
+## Teknologi yang Digunakan
 
-In the output, you'll find options to open the app in a
+- React Native
+- Expo
+- TypeScript
+- Expo Notifications
+- AsyncStorage
+- React Native SVG
+- React Native DateTimePicker
+- Expo Vector Icons
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Konsep React Hooks
 
-You can start developing by editing the files inside the **src/app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+Aplikasi ini menerapkan beberapa React Hooks:
 
-## Get a fresh project
+| Hooks | Fungsi |
+|---|---|
+| `useState` | Mengelola state aplikasi |
+| `useEffect` | Menangani efek samping dan penyimpanan data |
+| `useMemo` | Mengoptimalkan perhitungan data |
+| `useCallback` | Mengoptimalkan fungsi |
+| `useRef` | Mengakses referensi komponen |
+| `useReducer` | Mengelola perubahan state tugas |
 
-When you're ready, run:
+## Struktur Project
 
-```bash
-npm run reset-project
+```text
+student-task-manager/
+├── src/
+│   ├── app/
+│   │   ├── _layout.tsx
+│   │   └── index.tsx
+│   ├── components/
+│   │   └── TaskCard.tsx
+│   └── utils/
+│       └── notifications.ts
+├── assets/
+├── app.json
+├── package.json
+└── README.md
 ```
 
-This command will move the starter code to the **example** directory and create a blank **src/app** directory where you can start developing.
+## Cara Menjalankan Aplikasi
 
-### Other setup steps
+Pastikan Node.js dan Expo sudah terpasang.
 
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
+1. Clone repository:
 
-## Learn more
+```bash
+git clone https://github.com/ByOvann/student-task-manager.git
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+2. Masuk ke folder project:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```bash
+cd student-task-manager
+```
 
-## Join the community
+3. Instal dependencies:
 
-Join our community of developers creating universal apps.
+```bash
+npm install
+```
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+4. Jalankan aplikasi:
+
+```bash
+npx expo start
+```
+
+## Screenshot Aplikasi
+
+Tambahkan screenshot asli aplikasi ke folder `screenshots/`, kemudian tampilkan di bagian ini.
+
+Contoh:
+
+```markdown
+![Home](screenshots/home.png)
+![Tasks](screenshots/tasks.png)
+![Analytics](screenshots/analytics.png)
+![Settings](screenshots/settings.png)
+```
+
+## Repository
+
+GitHub: https://github.com/ByOvann/student-task-manager
+
+---
+
+**Student Task Manager**  
+Developed as a React Native academic project.
